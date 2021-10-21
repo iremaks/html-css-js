@@ -1,0 +1,7 @@
+Part-1
+1) Ekrana 3 adet p koy. Hepsine ayrı ayrı renk ver. Birinin rengini hex code ile ver.
+2) Ekrana 200*200 olan bir div koy. İçerisine bir p yerleştir. div e arka plan rengi ver.
+3) Ekrana iki tane img koy. 200*200 boyutunda. Source larını internetten alabilirsin
+4) Ekrana bir liste koy (ul li). Liste elemanlarının rengi tomato olsun
+5) Ekrana 200*200 bir div koy. Bu div e genişliği 10 px olan bir border ver. Border rengi tomato olsun.
+6) *** Ekrana 100*100 olan 2 tane div koy ve border ver. Bu div ler yanyana gelsin ( netten araştır )
