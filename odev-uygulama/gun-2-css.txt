@@ -1,3 +1,4 @@
 1) css selector makalesi okunacak ( https://code.tutsplus.com/tr/tutorials/the-30-css-selectors-you-must-memorize--net-16048 )
 https://www.w3schools.com/cssref/css_selectors.asp
 
+2) reset css
