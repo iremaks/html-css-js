@@ -1,0 +1,6 @@
+1) https://www.youtube.com/watch?v=_s15i3MoAyE
+2) https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+3) w3schools.com/css/css3_flexbox.asp
+4) https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+5) https://www.w3schools.com/w3css/w3css_templates.asp
+
