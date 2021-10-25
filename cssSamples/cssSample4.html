@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            background-color: #000;
+            color: #fff;
+        }
+        nav{
+            height: 100%;
+            width: 40%;
+            display: flex;
+            align-items: center;
+        }
+
+        ul {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 35px;
+            font-weight: 400;
+            font-family: 'Barlow';
+        }
+        ul li{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            height: 100%;
+        }
+       
+
+        ul li:hover{
+           
+            color: #000;
+            background-color: #f1f1f1;
+        }
+
+        .content{
+            background-image: url('https://www.w3schools.com/w3images/ny.jpg');
+            background-size: cover;
+            height: 600px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            color: #fff;
+            font-size: 25px;
+            padding-bottom: 3%;
+        }
+
+        .searchbox{
+            display: flex; 
+            align-items: center;
+            cursor: pointer;
+            width: 80px;
+            justify-content: center;
+ 
+
+        }
+
+        .searchbox:hover{
+            background-color: #F44336;
+        }
+
+        .about{
+            height: 600px;
+            padding:0px 18% 0px 18%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <ul>
+                <li>Home</li>
+                <li>Band</li>
+                <li>Tour</li>
+                <li>Contact</li>
+            </ul>
+
+        </nav>
+
+        <div class="searchbox">
+            <i class="fa fa-search" style="font-size:36px"></i>
+        </div>
+       
+
+
+    </header>
+
+    <div class="content">
+        <h3>Chicago</h3>
+    </div>
+
+    <div class="about">
+
+        <h1>Rotting Christ</h1>
+        <span>We love Black Metal</span>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quod eligendi ex laudantium ratione eaque nulla nihil magni voluptatum sed quas totam iste corporis architecto, fugiat, distinctio reiciendis! Vel, repellat.</p>
+
+        <div style="display: flex; justify-content: space-between;">
+
+            <div>
+                <h1>Name</h1>
+                <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="">
+            </div>
+
+            <div>
+                <h1>Name</h1>
+                <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="">
+            </div>
+
+            <div>
+                <h1>Name</h1>
+                <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="">
+            </div>
+            
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
