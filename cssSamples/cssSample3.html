@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+
+
+    <style>
+        * {
+            font-family: "Barlow";
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1 {
+            margin: 0px;
+        }
+        h4{
+            margin:0px
+        }
+
+        ul li {
+            display: inline;
+            cursor: pointer;
+        }
+
+        ul li:hover {
+            color: gray;
+        }
+
+        .header {
+            padding: 0px 30px 0px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 54px;
+            box-sizing: border-box;
+            font-size: 15px;
+            font-weight: 400;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #F7F7F7;
+        }
+
+        #menus {
+            width: 300px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .slider {
+            height: 600px;
+            background-image: url('https://www.w3schools.com/w3images/hamburger.jpg');
+            /* background-size: contain; */
+            display: flex;
+            align-items: flex-end;
+        }
+
+
+        #aboutcontent {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 3%;
+        }
+
+        .ourmenu{
+         justify-content: center;
+         column-gap: 80px;
+        }
+
+        .sectionbox{
+            margin-top: 70px;
+            display: flex;
+            padding-left: 5%;
+            padding-right: 5%;
+            margin-bottom: 70px;
+        }
+
+        #leftourmenu{
+            display: flex;
+           flex-direction: column;
+           align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <span id="logo">Gourmet au Catering</span>
+
+        <ul id="menus">
+            <li>About</li>
+            <li>Menu</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="slider">
+        <h1 style="margin-left: 30px; margin-bottom: 30px;">Bilge Çocuk</h1>
+    </div>
+
+    <div class="sectionbox">
+        <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" alt="">
+        <div id="aboutcontent">
+            <h2>About Catering</h2>
+            <h4>Tradition Since 1889</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quas obcaecati incidunt blanditiis
+                ducimus, voluptatum quos cumque aliquam neque consectetur placeat corrupti, maiores at laborum cum harum
+                qui ab vel.</p>
+        </div>
+    </div>
+    
+
+    <hr style="width: 90%;">
+
+    <div class="sectionbox ourmenu">
+       
+        <div id="leftourmenu">
+            <h1>Our Menu</h1>
+
+            <div class="menuitem">
+                <h4>Bread Basket</h4>
+                <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+            </div>
+
+            <div class="menuitem">
+                <h4>Bread Basket</h4>
+                <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+            </div>
+
+            <div class="menuitem">
+                <h4>Bread Basket</h4>
+                <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+            </div>
+
+            <div class="menuitem">
+                <h4>Bread Basket</h4>
+                <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+            </div>
+        </div>
+        <img src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="">
+    </div>
+
+</body>
+
+</html>
