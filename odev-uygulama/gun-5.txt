@@ -1,0 +1,6 @@
+1) https://www.youtube.com/watch?v=_FLV6X0druY
+2) https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+3) https://www.w3schools.com/css/css_grid.asp
+4) linkedin sertifikalar css - html ( opsiyonel )
+5) yapılacak tasarım => https://startbootstrap.com/previews/heroic-features
+
