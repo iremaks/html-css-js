@@ -8,3 +8,14 @@
 
 7) **** Ekrana bir buton ve 100*100 bir div koy. Butona her tıklandığında div 50 px sağa kaysın
 8) Dışarıdan öğrenci notu girilsin. 0-45 ise "kaldınız", 45-55 ise "paçayı yırttın", 55-70 ise "akmasa da damlıyor", 70-85 arasında "iyi", 85-100 arasında "hocam benim 2 puanı nereden kırdınız"
+
+9) Ekrana bir input iki tane buton ve bir div koy. Birinci butona bastığında div i sola ikinci butona bastığında sağa kaydır. Kaydırılacak px inputtan alınacak. Örneğin input a 100 girerse 100px sağ veya sola gidecek
+
+10) Ekrana iki input bir buton ve bir image koy. Butona tıklandığında inputttaki değerlere göre image width ve height  hesaplasın. 
+
+11)  Ekrana 5 adet input koy.  Girilen notların ortalamasını yıl sonu notu olarak göster.  
+
+12) Ekrana 2 input koy. Öğrencinin 2 adet not bilgisi girildikten sonra, ortalama 50 ve üzerinde ise ekrana “Geçti” değilse “Kaldı” yazdır 
+
+13) Ekrana bir input ve bir buton koy. Girilen sayı negatifse console a "negatif", pozitifse "pozitif", sıfırsa "Sıfır" yazsın
+
