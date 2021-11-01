@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <span id="title">Merhaba</span>
+    <p id="blogpost">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At tempora a quasi, sapiente, et, facilis aliquid assumenda nihil voluptatibus eos iusto dolores nulla excepturi sint qui quisquam? Quas, voluptates fugit!</p>
+
+    <button onclick="hello()">Hola</button>
+    <button onclick="hello()">Hola-2</button>
+
+    <button onclick="changeContent()">Change Content</button>
+
+    <input type="text" name="" id="name">
+    <button onclick="nameUpper()">Upper</button>
+
+</body>
+</html>
+
+<script>
+
+    //bu fonksiyon çalıltıpında inputtaki değeri alıp büyültüp console a yazar.
+    function nameUpper(){
+        var data = document.getElementById('name').value;
+        var newData = data.toUpperCase()
+        console.log(newData);
+    }
+
+
+
+    function changeContent(){
+        document.getElementById("blogpost").innerHTML = "Yuri Gagarin"
+    }
+
+     document.getElementById("title").style.color = "red";
+     document.getElementById("title").style.backgroundColor = "blue"
+
+
+     document.getElementById("title").innerHTML = "Hola"
+
+
+     function hello(){
+
+        alert("hello Berkin. Wie gehts?")
+
+     }
+
+     
+
+</script>

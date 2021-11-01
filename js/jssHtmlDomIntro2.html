@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" name="" id="name">
+    <button onclick="calc()">Calc</button>
+    <button onclick="calc2()">Calc-2</button>
+    <button onclick="calc3()">Calc-3</button>
+
+    
+</body>
+</html>
+<script>
+
+    //Ekrana girilen inputtaki değerin yanına TR ekle ve console a yazdır. Örneğin istanbul girdi TRistanbul yazsın gibi...
+
+    function calc(){
+        var data = document.getElementById('name').value;
+        var result = 'TR' + data;
+        console.log(result);
+    }
+
+
+    //Ekrana girilen inputtaki değerin kendisiyle toplamını console yazdır. Örneğin 5 girdi sonuç 10 olacak (5+5)
+    function calc2(){
+        var data = document.getElementById("name").value;
+        var result = Number(data) + Number(data);
+        console.log(result);
+
+
+        // "5" + "5"
+        // 5 + 5
+    }
+
+    //Ekrana girilen input 100 den büyükse console a "100 den büyük bir sayı girdiniz" yazsın. Değilse bir şey yazmasın
+    function calc3(){
+        var data = document.getElementById("name").value;
+        
+        if(Number(data) > 100){
+
+            console.log("100 den büyük bir sayı girdiniz");
+
+        }   
+        // else{
+            
+        // }
+
+    }
+
+</script>
