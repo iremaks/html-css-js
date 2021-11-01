@@ -1,0 +1,5 @@
+1) Ekrana bir input bir buton koy butona tıkladığında input a girilen değerin karesini console a yazsın.
+2) Ekrana iki input bir buton koy. Butona tıkladığında inputtaki değerleri toplayıp bir span a yazsın ( numeric olarak)
+3) Ekrana bir input bir buton koy. Butona tıkladığında inputtaki değerin %18 ini console a yazsın
+4) Ekrana bir input bir buton koy. Butona tıkladığında inputtaki değer 100 den büyükse %18 değilse %8 den KDV sini hesaplayıp KDV li fiyatı console a yazsın.
+5) Ekrana bir input bir p bir de buton koy. Butona tıkladığında input a girilen metni p içerisine yazdırsın
