@@ -3,3 +3,7 @@
 3) Ekrana bir input bir buton koy. Butona tıkladığında inputtaki değerin %18 ini console a yazsın
 4) Ekrana bir input bir buton koy. Butona tıkladığında inputtaki değer 100 den büyükse %18 değilse %8 den KDV sini hesaplayıp KDV li fiyatı console a yazsın.
 5) Ekrana bir input bir p bir de buton koy. Butona tıkladığında input a girilen metni p içerisine yazdırsın
+
+6)** Ekrana 200*200 bir div, bir input ve bir buton koy. Butona tıkladığında inputtan aldıpı rengi div background a versin. Önreğin input a "red" girdiğinde div background red olsun.
+
+7) **** Ekrana bir buton ve 100*100 bir div koy. Butona her tıklandığında div 50 px sağa kaysın

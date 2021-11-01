@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="data">
+    <button onclick="calc()">Calc</button>
+    <p id="result">...</p>
+</body>
+</html>
+<script>
+    //Ekrana bir input bir p bir de buton koy. Butona tıkladığında input a girilen metni p içerisine yazdırsın
+
+    function calc(){
+
+        var x = document.getElementById('data').value;
+
+        document.getElementById('result').innerHTML = x;
+
+    }
+</script>

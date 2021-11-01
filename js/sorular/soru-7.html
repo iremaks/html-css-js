@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div style="height: 100px; width: 100px; border-style: solid;" id="box">
+
+    </div>
+
+    <button onclick="go()">go go go</button>
+</body>
+</html>
+<script>
+    // Ekrana bir buton ve 100*100 bir div koy. Butona her tıklandığında div 50 px sağa kaysın
+
+
+    var leftPoint = 0;
+
+    function go(){
+        leftPoint = leftPoint + 50;
+        
+        document.getElementById('box').style.marginLeft = leftPoint + "px"
+    }
+
+</script>
