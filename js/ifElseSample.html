@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="data">
+    <button onclick="calc()">Calc</button>
+</body>
+</html>
+<script>
+    //inputa bir hava sıcaklığı girilecek. sıcaklık 0-10 arasındaysa soğuk, 10-20 arasındaysa idare eder, 20 den yüksek ise mis gibi hava
+
+    function calc(){
+        var x = Number(document.getElementById('data').value)
+
+        if( 0 <= x && x < 10){
+            console.log('Hava buzzz');
+        }
+        else if( 10 <= x && x <20){
+            console.log("idare eder");
+        }
+        else if( 20 <= x ){
+            console.log("mis gibi hava");
+        }
+        else{
+            console.log("Böyle bir hava mümkünatı yok!");
+        }
+
+    }
+</script>

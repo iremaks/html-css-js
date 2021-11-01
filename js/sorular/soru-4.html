@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="data">
+    <button onclick="calc()">Calc</button>
+
+</body>
+</html>
+<script>
+    //Ekrana bir input bir buton koy. Butona tıkladığında inputtaki değer 100 den büyükse %18 değilse %8 den KDV sini hesaplayıp KDV li fiyatı console a yazsın.
+
+    function calc(){
+
+        var x = document.getElementById('data').value;
+
+        if(Number(x) > 100){
+            var z = x * 1.18;
+            console.log('KDVli fiyat:' , z);
+        }
+        else{
+            var z = x * 1.08;
+            console.log('KDVli fiyat:' , z);
+        }
+
+    }
+</script>

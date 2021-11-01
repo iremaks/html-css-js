@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="daynumber">
+    <button onclick="calc()">Calc</button>
+</body>
+
+</html>
+<script>
+
+    //hangi gün numarasını girerse o haftanın gününü yazıyorum. Örneğin 1 girerse pazartesi, 2 girerse salı
+    function calc() {
+
+        let dayNumber = document.getElementById('daynumber').value;
+
+        if (dayNumber == "1") {
+            console.log('Pazartesi');
+        }
+        else if (dayNumber == "2") {
+            console.log('Salı');
+
+        }
+        else if (dayNumber == "3") {
+            console.log('Çarşamba');
+
+        }
+        else if (dayNumber == "4") {
+            console.log('Preşembe');
+
+        }
+        else if (dayNumber == "5") {
+            console.log('Cuma');
+
+        }
+        else if (dayNumber == "6") {
+            console.log('Cumartesi');
+
+        }
+        else if (dayNumber == "7") {
+            console.log('Pazar');
+
+        }
+        else {
+            console.log('Böyle bir gün yok');
+
+        }
+
+
+    }
+
+</script>

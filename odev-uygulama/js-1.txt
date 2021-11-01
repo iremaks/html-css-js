@@ -7,3 +7,4 @@
 6)** Ekrana 200*200 bir div, bir input ve bir buton koy. Butona tıkladığında inputtan aldıpı rengi div background a versin. Önreğin input a "red" girdiğinde div background red olsun.
 
 7) **** Ekrana bir buton ve 100*100 bir div koy. Butona her tıklandığında div 50 px sağa kaysın
+8) Dışarıdan öğrenci notu girilsin. 0-45 ise "kaldınız", 45-55 ise "paçayı yırttın", 55-70 ise "akmasa da damlıyor", 70-85 arasında "iyi", 85-100 arasında "hocam benim 2 puanı nereden kırdınız"
