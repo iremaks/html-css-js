@@ -15,14 +15,23 @@
 <script>
 
 //3*2 
-//2+2+2   ||  3+3
+//2+2+2+2+2   ||  3+3
 function calc(){
 
-    var x = document.getElementById('x').value;
-    var y = document.getElementById('y').value;
+    var x = document.getElementById('x').value; //3
+    var y = document.getElementById('y').value; //5
 
     //bu iki sayıyı ÇARPMA OPERATÖRÜ KULLANMADAN ÇARP
 
+
+    var total = 0;
+    for(i =0; i < y; i++){
+
+        total = total + Number(x);
+
+    }
+
+    console.log(total);
 
 }
 

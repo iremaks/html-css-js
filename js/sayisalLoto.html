@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+
+    <label>0</label>
+    <label>0</label>
+    <label>0</label>
+    <label>0</label>
+    <label>0</label>
+    <label>0</label>
+
+    <button onclick="print()">Çekiliş Zamanı</button>
+
+</body>
+
+</html>
+<script>
+
+    function print() {
+        //1 ile 49 arasında rastgele 6 sayı üretiyorum
+
+        var result = []
+        for (i = 0; i < 6; i++) {
+            var randomNumber = Math.floor(Math.random() * 49);
+            result.push(randomNumber);
+        }
+
+
+        for (i = 0; i < result.length; i++) {
+            document.getElementsByTagName('label')[i].innerHTML = result[i];
+        }
+    }
+
+
+
+
+
+</script>

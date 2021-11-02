@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <input type="text" id="sayi1">
+        <input type="text" id="sayi2">
+        <input type="text" id="sayi3">
+    </div>
+    <div>
+        <button onclick="calc()">Calc</button>
+    </div>
+
+</body>
+
+</html>
+<script>
+    //3 input bir buton koy. Butona tıkladığında en büyük sayıyı console a yazsın.
+
+    function calc() {
+
+        var sayi1 = Number(document.getElementById('sayi1').value);
+        var sayi2 = Number(document.getElementById('sayi2').value);
+        var sayi3 = Number(document.getElementById('sayi3').value);
+
+        var maxNumber = sayi1;
+
+        if (maxNumber > sayi3 && maxNumber > sayi2) {
+            console.log("En büyük sayı: ", sayi1);
+        }
+        else if (sayi2 > maxNumber && sayi2 > sayi3) {
+            console.log('En büyük sayı: ', sayi2);
+        }
+        else {
+            console.log('En büyük sayı: ', sayi3);
+        }
+
+    }
+
+
+</script>

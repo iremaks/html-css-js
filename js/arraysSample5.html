@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" name="" id="data">
+    <button onclick="calc()">Calc</button>
+
+</body>
+
+</html>
+<script>
+
+    // Dışarıdan girilen sayıya kadar olan çift sayıları ekrana yazdır. Örneğin 11 girdiyse ekrana “2”,”4”,”6”,”8” gibi.  ( for içerisine if)
+    function calc() {
+
+        var x = document.getElementById('data').value;
+
+        // for (i = 0; i < x; i++) {
+
+        //     if (i % 2 == 0) {
+        //         console.log(i);
+        //     }
+
+        // }
+
+
+        for (i = 0; i < x; i = i + 2) {
+
+                console.log(i);
+
+        }
+
+    }
+
+
+</script>

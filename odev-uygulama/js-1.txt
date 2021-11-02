@@ -19,3 +19,15 @@
 
 13) Ekrana bir input ve bir buton koy. Girilen sayı negatifse console a "negatif", pozitifse "pozitif", sıfırsa "Sıfır" yazsın
 
+14) 3 input bir buton koy. Butona tıkladığında en büyük sayıyı console a yazsın.
+
+15) Girilen 3 sayının hepsi 0’dan büyük ve çift ise “Başarılı Giriş”, aksi halde “Başarısız giriş” mesajı veren program 
+
+
+Array Sorular
+
+1) Ekrana 10 kez “Hello World!” yazdır. 
+2) Bir input bir buton koy. İnput a girilen değer kadar
+3) Dışarıdan girilen sayıya kadar olan çift sayıları ekrana yazdır. Örneğin 11 girdiyse ekrana “2”,”4”,”6”,”8” gibi.  ( for içerisine if)
+4) 2 input bir buton koy. Butona tıkladığında inputlardaki sayıların arasındaki sayıları ekrana yazsın. Örneğin 3 ve 10 girdi. 4,5,6,7,8,9 yazsın
+5) 
