@@ -13,7 +13,7 @@
 
 10) Ekrana iki input bir buton ve bir image koy. Butona tıklandığında inputttaki değerlere göre image width ve height  hesaplasın. 
 
-11)  Ekrana 5 adet input koy.  Girilen notların ortalamasını yıl sonu notu olarak göster.  
+11) Ekrana 5 adet input koy.  Girilen notların ortalamasını yıl sonu notu olarak göster.  
 
 12) Ekrana 2 input koy. Öğrencinin 2 adet not bilgisi girildikten sonra, ortalama 50 ve üzerinde ise ekrana “Geçti” değilse “Kaldı” yazdır 
 

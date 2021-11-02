@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: tomato;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            box-1
+        </div>
+
+        <div class="box">
+            box-2
+        </div>
+        <div class="box">
+            box-3
+        </div>
+    </div>
+
+    <button onclick="changeColor()">Change Color</button>
+
+
+</body>
+
+</html>
+<script>
+    //Butona bastığında tüm divlerin arka plan rengi brown olsun
+
+    function changeColor() {
+
+        document.getElementsByClassName('box')[1].style.backgroundColor = 'yellow'
+    }
+
+</script>

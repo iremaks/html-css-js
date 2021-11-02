@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <label for="">Not-1</label>
+        <input type="text" id="not1" placeholder="Birinci not">
+    </div>
+    <div>
+        <label for="">Not-2</label>
+        <input type="text" id="not2" placeholder="İkinci not">
+    </div>
+   
+    <button onclick="calc()">Calc</button>
+</body>
+
+</html>
+<script>
+    // Ekrana 2 input koy. Öğrencinin 2 adet not bilgisi girildikten sonra, ortalama 50 ve üzerinde ise ekrana “Geçti” değilse “Kaldı” yazdır 
+
+    function calc() {
+
+        var x = document.getElementById('not1').value;
+        var y = document.getElementById('not2').value;
+
+        var z = (Number(x) + Number(y)) / 2
+
+        if(z >= 50){
+            console.log('Geçtin! Notun: ', z);
+        }
+        else{
+            console.log('Kaldın! Notun: ', z);
+        }
+
+    
+
+    }
+
+</script>

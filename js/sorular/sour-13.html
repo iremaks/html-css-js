@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="sayi">
+    <button onclick="calc()">Calc</button>
+</body>
+</html>
+<script>
+    //13) Ekrana bir input ve bir buton koy. Girilen sayı negatifse console a "negatif", pozitifse "pozitif", sıfırsa "Sıfır" yazsın
+
+    function calc(){
+        var x = Number(document.getElementById('sayi').value);
+
+        if(x < 0){
+            console.log('Sayını negatif');
+        }
+        else if(x > 0){
+            console.log('Sayı pozitif');
+        }
+        else{
+            console.log('Sayınız sanırım SIFIR');
+        }
+
+    }
+
+</script>

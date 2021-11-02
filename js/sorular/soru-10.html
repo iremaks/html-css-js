@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 100px;
+            height: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="">Width</label>
+        <input type="text" id="w">
+    </div>
+
+    <div>
+        <label for="">Height</label>
+        <input type="text" id="h">
+
+    </div>
+    <div>
+        <button onclick="changeSize()">Change Size</button>
+
+    </div>
+    <img id="koala" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Koala_climbing_tree.jpg" alt="">
+</body>
+<script>
+    // 10) Ekrana iki input bir buton ve bir image koy. Butona tıklandığında inputttaki değerlere göre image width ve height  hesaplasın. 
+    function changeSize() {
+        var x = document.getElementById('w').value;
+        var y = document.getElementById('h').value;
+
+
+        document.getElementById('koala').style.width = x + "px";
+        document.getElementById('koala').style.height = y + "px";
+
+
+    }
+</script>
+
+</html>
