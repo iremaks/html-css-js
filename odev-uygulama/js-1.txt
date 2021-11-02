@@ -30,4 +30,4 @@ Array Sorular
 2) Bir input bir buton koy. İnput a girilen değer kadar
 3) Dışarıdan girilen sayıya kadar olan çift sayıları ekrana yazdır. Örneğin 11 girdiyse ekrana “2”,”4”,”6”,”8” gibi.  ( for içerisine if)
 4) 2 input bir buton koy. Butona tıkladığında inputlardaki sayıların arasındaki sayıları ekrana yazsın. Örneğin 3 ve 10 girdi. 4,5,6,7,8,9 yazsın
-5) 
+5) Ekrana 5 tane image (arka planında AT resmi olacak ) ve bir buton koy. Butona her tıkladığında imageler 1,100 arasında random sağa doğru gitsin

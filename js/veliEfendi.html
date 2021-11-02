@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 300px;
+            height: 130px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="display: flex; flex-direction: column;">
+        <img src="https://vetrehberi.com/wp-content/uploads/2018/11/akhal-teke-at-irki.jpg" alt="">
+        <hr>
+        <img src="http://4.bp.blogspot.com/_6queiFLFFhk/S84F2N7vunI/AAAAAAAAEZ0/TpAjO7re2SM/s1600/at.jpg" alt="">
+    </div>
+ 
+
+    <hr>
+
+    <button onclick="run()">Koş Horse</button>
+
+</body>
+
+<script>
+
+    var atLeft = [0,0];
+
+    function run() {
+
+        for(i=0; i < 2;i++){
+            var randomNumber = Math.floor(Math.random() * 100);
+            atLeft[i] = atLeft[i] + randomNumber;
+
+            document.getElementsByTagName('img')[i].style.marginLeft = atLeft[i] + "px";
+        }
+
+      
+
+    }
+</script>
+
+</html>
