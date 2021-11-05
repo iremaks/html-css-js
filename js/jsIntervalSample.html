@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 700px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="display: flex; justify-content: center;">
+        <img src="https://cdn.evrimagaci.org/vNF9LZ6dVKrINJzCxv0YM71Ik48=/evrimagaci.org%2Fpublic%2Fcontent_media%2Ffa0e4e35d3a0619d1110bbc58c2c662e.jpg"
+            alt="">
+
+        <img src="https://cicicee.com/wp-content/uploads/2015/01/tembel-hayvan-2-370x208.jpg" style="display: none;"
+            alt="">
+
+        <img src="https://www.petipet.net/uploads/2020/07/images-8-2.jpg" alt="" style="display: none;">
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    setInterval(changeImage, 1000)
+
+    var showImg = 0;
+
+    function changeImage() {
+
+        for (i = 0; i < 3; i++) {
+
+            if(showImg == 2){
+                document.getElementsByTagName('img')[0].style.display = 'inline';
+                document.getElementsByTagName('img')[1].style.display = 'none';
+                document.getElementsByTagName('img')[2].style.display = 'none';
+            }
+            else if(showImg + 1 == i){
+                document.getElementsByTagName('img')[i].style.display = 'inline';
+            }
+            else{
+
+                document.getElementsByTagName('img')[i].style.display = 'none';
+            }
+        }
+
+        if(showImg == 2){
+            showImg = 0;
+        }
+        else{
+            showImg = showImg + 1;
+        }
+       
+
+    }
+
+</script>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="box" style="width: 300px; height: 300px; background-color: aqua;">
+
+    </div>
+
+</body>
+</html>
+
+<script>
+
+    // setInterval(slider,1000);
+
+
+    // function slider(){
+    //    // console.log("Hello")
+    // }
+
+
+    setInterval(boxColorchange,100)
+
+
+    var colors = ['tomato','red','yellow','blue','green','pink','orange','black','white','aqua','brown','gray']
+
+    function boxColorchange(){
+
+        var randomColor = Math.floor(Math.random() * 11);
+
+        document.getElementById('box').style.backgroundColor = colors[randomColor]
+
+    }
+
+
+    setTimeout(hola,2000);
+
+
+    function hola(){
+        alert('hola')
+    }
+
+</script>
