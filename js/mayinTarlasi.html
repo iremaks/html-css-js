@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    
+    }
+    button{
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+        margin:10px
+    }
+
+</style>
+<body>
+
+    <button id="1"></button>
+    <button id="2"></button>
+    <button id="3"></button>
+    <button id="4"></button>
+    <button id="5"></button>
+    <button id="6"></button>
+
+    
+</body>
+
+<script>
+
+
+var mayin = Math.floor(Math.random() * 6);
+
+
+buttons = document.getElementsByTagName('button');
+
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', mayinKontrol, false);
+}
+
+function mayinKontrol(ev){
+
+     //Tıklanılan buton elementinin id sini yakaladım
+     var id = Number(ev.target.id);
+
+     if(mayin == id){
+         document.getElementById(id).style.backgroundColor = 'red';
+         alert('kaybettin!!')
+    
+     }
+     else{
+        document.getElementById(id).style.backgroundColor = 'blue';
+
+     }
+
+}
+
+
+
+</script>
+
+
+</html>

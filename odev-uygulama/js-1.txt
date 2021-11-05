@@ -39,3 +39,8 @@ Interval Sorular
 
 
 
+Sayı Tahmin Oyunu
+Ekrana bir input bir buton koy. 0-100 arasında random bir sayı tanımla. Butona tıkladığında sayıyı tahmin etmeye çalışıyor. Örneğin sayı 11 ve input a 20 girip butona bastı ekrana "Sayınız 0-20 arasında" deyip bir uyarı verecek. Böylelikle her tıkladığında kullanıcıya sayı aralığı vereceğiz. 
+
+Basit Mayın Tarlası
+Ekrana 4 tane buton koy. Bir butonda mayın olmalı. Butona tıkladığında mayın varsa ekrana mayına bastınız yazsın
