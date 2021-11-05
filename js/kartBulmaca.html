@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: center;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        <img id="0" src="https://www.insidehook.com/wp-content/uploads/2021/06/Punctuation.jpg" alt="" srcset="">
+        <img id="1" src="https://www.insidehook.com/wp-content/uploads/2021/06/Punctuation.jpg" alt="" srcset="">
+        <img id="2"  src="https://www.insidehook.com/wp-content/uploads/2021/06/Punctuation.jpg" alt="" srcset="">
+        <img id="3"  src="https://www.insidehook.com/wp-content/uploads/2021/06/Punctuation.jpg" alt="" srcset="">
+        <img id="4"  src="https://www.insidehook.com/wp-content/uploads/2021/06/Punctuation.jpg" alt="" srcset="">
+        <img id="5"  src="https://www.insidehook.com/wp-content/uploads/2021/06/Punctuation.jpg" alt="" srcset="">
+
+
+    </div>
+
+</body>
+
+</html>
+<script>
+
+
+    var defaultSource = 'https://www.insidehook.com/wp-content/uploads/2021/06/Punctuation.jpg'
+
+    var image1 = 'https://cdn.evrimagaci.org/vNF9LZ6dVKrINJzCxv0YM71Ik48=/evrimagaci.org%2Fpublic%2Fcontent_media%2Ffa0e4e35d3a0619d1110bbc58c2c662e.jpg';
+    var image2 = 'https://cicicee.com/wp-content/uploads/2015/01/tembel-hayvan-2-370x208.jpg';
+    var image3 = 'https://www.petipet.net/uploads/2020/07/images-8-2.jpg'
+
+
+    var images = [image1, image1, image2, image2, image3, image3]
+
+
+
+    var gizlenenResimler = [];
+
+    for (i = 0; i < 6; i++) {
+
+        var rastgeleResim = Math.floor(Math.random() * 6);
+
+        if (gizlenenResimler.includes(rastgeleResim)) {
+            i--;
+        }
+        else {
+            gizlenenResimler.push(rastgeleResim)
+        }
+    }
+
+    // [3,5,1,2,4,0]
+
+
+    docImages = document.getElementsByTagName('img');
+
+    for (var i = 0; i < docImages.length; i++) {
+        docImages[i].addEventListener('click', showImage, false);
+    }
+
+    var firstClick = '';
+
+    function showImage(ev) {
+        //Tıklanılan image elementinin id sini yakaladım
+        var id = Number(ev.target.id);
+        var rastgele = gizlenenResimler[id];
+        document.getElementById(id).src = images[rastgele]
+
+
+        if(firstClick == ''){
+            firstClick = images[rastgele];
+        }
+        else{
+
+            if(firstClick == images[rastgele]){
+                //alert('Aynı resme tıkladın!!')
+            }
+            else{
+                firstClick = '';
+            }
+
+        }
+       
+        
+    }
+
+
+</script>
