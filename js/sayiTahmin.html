@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" name="" id="tahmin">
+    <button onclick="tahmin()">Tahmin Et</button>
+
+</body>
+
+</html>
+
+<script>
+
+    var sonuc = Math.floor(Math.random() * 100);
+
+    var tahminHak = 5
+    var enkucuk = 0;
+    var enbuyuk = 100;
+
+    //51
+
+    function tahmin() {
+
+
+        var sayi = document.getElementById('tahmin').value;
+
+
+        if (sayi > sonuc) {
+            tahminHak--;
+            enbuyuk = sayi
+            alert("Sayınız " + enkucuk + " ile " + enbuyuk + " arasındadır");
+        }
+        else if (sayi < sonuc) {
+            tahminHak--;
+            enkucuk = sayi
+            alert("Sayınız " + enkucuk + " ile " + enbuyuk + " arasındadır");
+        }
+        else {
+            alert("Bildin. aferin müthiş bir iş başardın sevgili acılı ezme.")
+        }
+
+
+
+        //42
+        //Sayınız 42 ile 100 arasında
+
+        //54
+        //Sayınız 42 ile 54 arasında
+
+        //50
+        //Sayınız 50 ile 54 arasında
+    }
+
+
+
+</script>
+
+<!-- Sayı Tahmin Oyunu -->
+<!-- Ekrana bir input bir buton koy. 0-100 arasında random bir sayı tanımla. Butona tıkladığında sayıyı tahmin etmeye çalışıyor. Örneğin sayı 11 ve input a 20 girip butona bastı ekrana "Sayınız 0-20 arasında" deyip bir uyarı verecek. Böylelikle her tıkladığında kullanıcıya sayı aralığı vereceğiz.  -->
