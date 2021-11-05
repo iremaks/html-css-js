@@ -44,3 +44,17 @@ Ekrana bir input bir buton koy. 0-100 arasında random bir sayı tanımla. Buton
 
 Basit Mayın Tarlası
 Ekrana 4 tane buton koy. Bir butonda mayın olmalı. Butona tıkladığında mayın varsa ekrana mayına bastınız yazsın
+
+
+https://www.w3schools.com/js/default.asp  
+Bu bölüme göz gezdirilecek
+
+
+js arrow function
+https://www.w3schools.com/js/js_arrow_function.asp
+
+
+arrow functionlardan sonra buna bakılacak
+https://www.tutorialsteacher.com/javascript/javascript-object
+
+
