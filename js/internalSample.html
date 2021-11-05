@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <label id="point" style="font-size: 60px;">0</label>
+    
+    <div id='box' onclick="catchDiv()">
+
+    </div>
+
+</body>
+</html>
+<script>
+    
+    var runInterval = setInterval(runBoxrun,1000)
+
+    function runBoxrun(){
+
+        var randomX = Math.floor(Math.random() * screen.width);
+        var randomY = Math.floor(Math.random() * screen.height);
+
+        document.getElementById('box').style.left = randomX + 'px';
+        document.getElementById('box').style.top = randomY + "px";
+
+
+    }
+
+    //aşağıdaki kodu nereye koyarsan interval DURACAK
+   // clearInterval(runInterval)
+
+
+    var point = 0;
+
+    function catchDiv(){
+        point = point + 10;
+
+        document.getElementById('point').innerHTML = point
+    }
+
+//Ekrana 4 tane kutu koy. bu kutulara birer renk ve id ver. kırmızı kutuya tıkladığında puan artsın. Diğer kutulara tıkladığında puan azalsın. Eğer puan 0 ın altına düşerse ekrana mesaj ver!
+</script>
