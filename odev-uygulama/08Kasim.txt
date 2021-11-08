@@ -2,3 +2,4 @@
 2) Ekrana bir buton koy. Butona tıkladığında genişliği ve yüksekliği random (0-200 arasında) 10 tane divi ekrana eklesin
 3) Ekrana bir buton koy. Tıkladığında 10 tane buton ekrana eklesin. 10 butonun arka plan rengi rastgele seçilsin. Öncesinde bir renk dizisi tanımlaman gerekli.
 4) Ekrana 3 input koy. İnputlara genişlik yükseklik ve renk girsin bu doğrultuda div eklesin
+5) 4. soruya ek olarak bir buton daha koy. Ona tıklayınca önceden eklediği div in boyutunu rengini inputlara göre tekrar güncelesin

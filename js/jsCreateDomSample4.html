@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="">Width</label>
+        <input type="text" id="width">
+    </div>
+    <div>
+        <label for="">Height</label>
+        <input type="text" name="" id="height">
+    </div>
+    <div>
+        <label for="">Color</label>
+        <input type="text" id="color">
+    </div>
+ 
+    <button onclick="add()">Add</button>
+    <button onclick="update()">Update</button>
+
+</body>
+</html>
+<script>
+    //4) Ekrana 3 input koy. İnputlara genişlik yükseklik ve renk girsin bu doğrultuda div eklesin
+// 5) 4. soruya ek olarak bir buton daha koy. Ona tıklayınca önceden eklediği div in boyutunu rengini inputlara göre tekrar güncelesin
+
+
+function add(){
+
+    var width = document.getElementById("width").value;
+    var height = document.getElementById("height").value;
+    var color = document.getElementById("color").value;
+
+    var div = document.createElement("div")
+
+    div.style.width = width + "px"
+    div.style.height = height + "px"
+    div.style.backgroundColor = color;
+    div.id = "box"
+
+    document.body.appendChild(div);
+
+
+
+}
+
+function update(){
+
+    var width = document.getElementById("width").value;
+    var height = document.getElementById("height").value;
+    var color = document.getElementById("color").value;
+
+    var div = document.getElementById("box");
+
+    div.style.width = width + "px"
+    div.style.height = height + "px"
+    div.style.backgroundColor = color;
+    div.id = "box"
+    
+}
+
+</script>
