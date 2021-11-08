@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="add()">Add</button>
+    <button onclick="add2()">Add Buttons</button>
+    <button onclick="add3()">Add Buttons - 2</button>
+
+
+
+</body>
+
+</html>
+<script>
+
+
+    function add3(){
+
+        var newButton = document.createElement("button");
+        newButton.innerHTML = "Click!"
+        newButton.style.backgroundColor = "red";
+
+        document.body.appendChild(newButton)
+
+    }
+
+    //Butona tıkladığında yeni bir buton oluşturup ekrana eklesin
+    function add() {
+
+        //Bu iki saıtr butonu oluşturuyor
+        var newButton = document.createElement("button");
+        newButton.innerHTML = "Click!"
+        // newButton.style.position = "absolute"
+
+        //Burada da butonu body e ekliyoruz
+        document.body.appendChild(newButton);
+
+    }
+
+
+    function add2() {
+
+        //Bu fonksiyon çalıştığında 10 tane buton eklenecek
+
+        for (i = 0; i < 10; i++) {
+            var newButton = document.createElement("button");
+            newButton.innerHTML = "Click!"
+            document.body.appendChild(newButton)
+        }
+
+    }
+
+</script>

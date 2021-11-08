@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="add()">Add</button>
+    <button onclick="add2()">Add-2</button>
+    
+    <ul id="list">
+
+    </ul>
+
+</body>
+</html>
+<script>
+
+function add(){
+
+    var liElement = document.createElement("li");
+    liElement.innerHTML = "Çağatay";
+
+    document.getElementById("list").appendChild(liElement);
+
+}
+
+function add2(){
+
+    var div = document.createElement("div")
+    div.style.backgroundColor = "red"
+    div.style.width = "100px"
+    div.style.height = "100px"
+
+    document.body.appendChild(div)
+
+}
+
+
+var colors = ["red","green","brown","orange","purple"]
+</script>
