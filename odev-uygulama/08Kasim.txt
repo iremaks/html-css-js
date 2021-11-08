@@ -8,3 +8,9 @@
 7) https://northwind.vercel.app/api/orders dan orderları çek customerid - city - region yazdır!!!
 
 8) ** https://northwind.vercel.app/api/products dan productları çek. Ürün fiyatı 40 dan büyük kaç adet ürün vardır?
+
+9) Brezilyadan kaç siparişim var?
+
+10) *** Ürünlerimin ortala fiyatı nedir
+
+11) freight 4 den büyük kaç ürün var
