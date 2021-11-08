@@ -3,3 +3,8 @@
 3) Ekrana bir buton koy. Tıkladığında 10 tane buton ekrana eklesin. 10 butonun arka plan rengi rastgele seçilsin. Öncesinde bir renk dizisi tanımlaman gerekli.
 4) Ekrana 3 input koy. İnputlara genişlik yükseklik ve renk girsin bu doğrultuda div eklesin
 5) 4. soruya ek olarak bir buton daha koy. Ona tıklayınca önceden eklediği div in boyutunu rengini inputlara göre tekrar güncelesin
+6) https://northwind.vercel.app/api/categories adresindeki kateogirlerin adını BÜYÜK harfle li ye bas
+
+7) https://northwind.vercel.app/api/orders dan orderları çek customerid - city - region yazdır!!!
+
+8) ** https://northwind.vercel.app/api/products dan productları çek. Ürün fiyatı 40 dan büyük kaç adet ürün vardır?

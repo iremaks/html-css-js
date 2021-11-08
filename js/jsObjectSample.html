@@ -24,4 +24,68 @@
 
     console.log(user.countries[2]);
 
+    //Nested objemiz supplier
+
+    var product = {
+        name: "IPhone",
+        price: 5000,
+        labels: ['phone', 'apple'],
+        supplier: {
+            name: "Çağatay Bilişim",
+            phone: "5554443333"
+        }
+    }
+
+
+    //Ekrana ürünün tedarikçisinin adını yani "Çağatay Bilişim" i yazdır
+
+    // console.log(product.supplier.name);
+
+
+    var categories = [
+        {
+            name: "Electronic",
+            description: "electronic products..."
+        },
+        {
+            name: "Seafood",
+            description: "Seafood products..."
+        }
+    ]
+
+
+    console.log(categories[1].name);
+
+
+    var orders = [
+        {
+            orderId: 2331,
+            totalPrice: 10000,
+            details: [
+                {
+                    name: "Kuruvasan",
+                    quantity: 5
+                },
+                {
+                    name: "Adana Dürüm",
+                    quantity: 1
+                }
+            ]
+        },
+
+        {
+            orderId: 2391,
+            totalPrice: 2000,
+            details: [
+                {
+                    name: "Lokma (lokmacılar nasıl da BATTI)",
+                    quantity: 1
+                }
+            ]
+        }
+    ]
+
+    console.log(orders[0].details[0].name);
+
+
 </script>
