@@ -8,5 +8,21 @@
 </head>
 <body>
     
+    <button onclick="remove()">Remove Element</button>
+
+    <div style="width: 100px; height: 100px; background-color: tomato;" id="box">
+
+    </div>
+
 </body>
 </html>
+<script>
+
+function remove(){
+
+    var box = document.getElementById("box");
+    box.remove()
+
+}
+
+</script>

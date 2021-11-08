@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <label for="">Width</label>
+        <input type="text" id="width">
+    </div>
+    <div>
+        <label for="">Height</label>
+        <input type="text" name="" id="height">
+    </div>
+    <div>
+        <label for="">Source</label>
+        <input type="text" id="source">
+    </div>
+ 
+    <button onclick="add()">Add</button>
+
+</body>
+</html>
+<script>
+
+//Ekrana genişlik, yükseklik ve source olarak dataların alınacağı 3 tane input koy
+
+function add(){
+    
+    var width = document.getElementById("width").value;
+    var height = document.getElementById("height").value;
+    var source = document.getElementById("source").value;
+
+    var image = document.createElement("img");
+
+    image.style.width = width + "px";
+    image.style.height = height + "px";
+    image.src = source;
+
+
+    document.body.appendChild(image)
+
+}
+
+
+</script>
