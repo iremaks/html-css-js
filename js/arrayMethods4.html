@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //3) *** Siparişdetayında 2 veya daha fazla sipariş bulunan orderları console a yaz.
+
+    var orders = [
+        {
+            "id": 10271,
+            "customerId": "SPLIR",
+            "employeeId": 6,
+            "orderDate": "1996-08-01 00:00:00.000",
+            "requiredDate": "1996-08-29 00:00:00.000",
+            "shippedDate": "1996-08-30 00:00:00.000",
+            "shipVia": 2,
+            "freight": 4.54,
+            "shipName": "Split Rail Beer & Ale",
+            "shipAddress": {
+                "street": "P.O. Box 555",
+                "city": "Lander",
+                "region": "WY",
+                "postalCode": 82520,
+                "country": "USA"
+            },
+            "details": [
+                {
+                    "productId": 33,
+                    "unitPrice": 2,
+                    "quantity": 24,
+                    "discount": 0
+                },
+                {
+                    "productId": 33,
+                    "unitPrice": 2,
+                    "quantity": 24,
+                    "discount": 0
+                }
+            ]
+        },
+        {
+            "id": 10266,
+            "customerId": "WARTH",
+            "employeeId": 3,
+            "orderDate": "1996-07-26 00:00:00.000",
+            "requiredDate": "1996-09-06 00:00:00.000",
+            "shippedDate": "1996-07-31 00:00:00.000",
+            "shipVia": 3,
+            "freight": 25.73,
+            "shipName": "Wartian Herkku",
+            "shipAddress": {
+                "street": "Torikatu 38",
+                "city": "Oulu",
+                "region": "NULL",
+                "postalCode": 90110,
+                "country": "Finland"
+            },
+            "details": [
+                {
+                    "productId": 12,
+                    "unitPrice": 30.4,
+                    "quantity": 12,
+                    "discount": 0.05
+                }
+            ]
+        },
+        {
+            "id": 10279,
+            "customerId": "LEHMS",
+            "employeeId": 8,
+            "orderDate": "1996-08-13 00:00:00.000",
+            "requiredDate": "1996-09-10 00:00:00.000",
+            "shippedDate": "1996-08-16 00:00:00.000",
+            "shipVia": 2,
+            "freight": 25.83,
+            "shipName": "Lehmanns Marktstand",
+            "shipAddress": {
+                "street": "Magazinweg 7",
+                "city": "Frankfurt a.M.",
+                "region": "NULL",
+                "postalCode": 60528,
+                "country": "Germany"
+            },
+            "details": [
+                {
+                    "productId": 17,
+                    "unitPrice": 31.2,
+                    "quantity": 15,
+                    "discount": 0.25
+                }
+            ]
+        },
+        {
+            "id": 10292,
+            "customerId": "TRADH",
+            "employeeId": 1,
+            "orderDate": "1996-08-28 00:00:00.000",
+            "requiredDate": "1996-09-25 00:00:00.000",
+            "shippedDate": "1996-09-02 00:00:00.000",
+            "shipVia": 2,
+            "freight": 1.35,
+            "shipName": "Tradiçao Hipermercados",
+            "shipAddress": {
+                "street": "Av. Inês de Castro 414",
+                "city": "Sao Paulo",
+                "region": "SP",
+                "postalCode": "05634-030",
+                "country": "Brazil"
+            },
+            "details": [
+                {
+                    "productId": 20,
+                    "unitPrice": 64.8,
+                    "quantity": 20,
+                    "discount": 0
+                }
+            ]
+
+        }
+    ]
+
+    // for (i = 0; i < orders.length; i++) {
+
+    //     if(orders[i].details >= 2){
+    //         console.log(orders[i].shipName);
+    //     }
+    // }
+
+
+    var result = orders.filter(q => q.details.length >= 2);
+    console.log(result);
+
+</script>
+
+</html>
