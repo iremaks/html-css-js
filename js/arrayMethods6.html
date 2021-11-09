@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="productsData.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <label for="">Min Price:</label>
+        <input type="text" id="minPrice">
+    </div>
+
+    <div>
+        <label for="">Max Price</label>
+        <input type="text" id="maxPrice">
+    </div>
+
+    <div>
+        <Button onclick="findProducts()">Calc</Button>
+    </div>
+</body>
+</html>
+
+<script>
+//Butona tıkladığında minimum ve maksimum değerleri alır. Ona göre ürünleri getirir. Yani price aralığına göre
+
+var findProducts = () => {
+
+    var min = Number(document.getElementById("minPrice").value);
+    var max = Number(document.getElementById("maxPrice").value);
+
+    var newProducts = products.filter( q => q.unitPrice > min && q.unitPrice < max)
+
+    console.log(newProducts);
+}
+
+
+</script>

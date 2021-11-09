@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+
+//NORMAL FONKSİYONLAR
+//Bu fonkisyon dışarıya bir string return eder.
+function hello(){
+    return "hello"
+}
+
+
+// Bu fonksiyon dışarıdan price alır ve bir hesaplama sonrası 1.18 katını dışarıya döner
+function KDVCalc(price){
+    return price * 1.18
+}
+
+
+var sonuc = KDVCalc(100)
+
+//console.log(sonuc);
+
+
+
+// ARROW FUNCTION
+
+var merhaba  = () =>{
+
+    return "Merhaba Dünya!!"
+
+}
+
+//arrow function içerisi TEK SATIR İSE ve BU SATIR RETURN SATIRI İSE ŞÖYLE DE YAZILABİLİR
+var hola = () => "Hola World!";
+
+
+
+// function merhaba(){
+//     return "Merhaba Dünya!!"
+// }
+
+
+//Bu fonksiyon dışarıdan aldığı price değerini 1.18 ile çarpıp sonucu bana verir
+var KDVCalc2 = (price) => price * 1.18
+
+var newPrice = KDVCalc2(100)
+
+
+
+
+</script>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +7,25 @@
     <title>Document</title>
     <script src="./productsData.js"></script>
 </head>
-
 <body>
+    
     <ul id="productList">
 
     </ul>
-</body>
 
+</body>
 </html>
 <script>
 
-   //5) ** Bu sorunun array functionla ilgisi yok. Ürünleri yazdır FAKAT stok adedi 0 ise o li KIRMIZI olsun
+    //Ekrana ürünün fiyatının KDV li halini yaz
 
-    for (i = 0; i < products.length; i++) {
+    products.forEach(item => {
 
         var liElement = document.createElement('li');
-        liElement.innerHTML = products[i].name
+        liElement.innerHTML = (item.unitPrice * 1.18).toFixed(2);
 
-        if(products[i].unitsInStock == 0){
+        document.body.appendChild(liElement)
 
-            liElement.style.color = 'red'
-
-        }
-
-        document.body.appendChild(liElement);
-
-    }
+    })
 
 </script>
