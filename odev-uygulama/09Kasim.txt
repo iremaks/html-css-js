@@ -11,3 +11,24 @@ Orders Array Sorular
 1) Taşıma ücretü 5 üzeri olan ve ülkesi Brazil OLMAYAN kaç adet siparişim var?
 2) Ekrana sadece Fransadan gelen siparişleri yazdır
 3) *** Siparişdetayında 2 veya daha fazla sipariş bulunan orderları console a yaz.
+
+
+//Orderları bir js dosyasına AT. 
+// 4)  Foreach kullanarak erkana siparişin şehrini ve ülkesini yanyana BÜYÜK HARFLERLE YAZDIR.
+
+
+// https://jsonplaceholder.typicode.com/ den post datasını al
+
+1) foreach ile post title larını ekrana yaz
+2) filter kullanarak userId si 1 olan dataları console a yaz
+3) todoları bir dosyay at. completed false olan satırı kırmızı true olan satırı sarı olacak şekilde ul ye bas
+
+
+4) 10 tane arrow function YAZ!!!! dışarıdan değer alan, değer döndüren, tek satırlık ...
+
+// https://www.freecodecamp.org/news/the-javascript-array-handbook/
+https://www.youtube.com/watch?v=ynG3u3I669o&list=PLWctyKyPphPgqzd2Np8VlKiXhkpAjSV0c
+
+
+YILDIZLI SORU (* lı)
+1997 yılının ilk yarısındaki siparişleri ekrana yaz

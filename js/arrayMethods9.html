@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="commentsData.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+
+//comments datasının email kolonunda .biz geçen commentleri console a yaz. Yani hangi yorumlarda .biz uzantılı mail kullanıyor
+
+comments.forEach(item => {
+
+    if(item.email.includes(".biz")){
+       // console.log(item.email);
+    }
+
+})
+
+var newComments = comments.filter(q => q.email.includes(".biz"));
+
+console.log(newComments);
+
+
+
+
+</script>
