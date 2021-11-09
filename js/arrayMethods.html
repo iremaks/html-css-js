@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" name="" id="name">
+    <button onclick="find()">Find</button>
+    <button onclick="varMi()">Eleman Var mı?</button>
+
+    <hr>
+
+    <ul id="cityList">
+
+    </ul>
+
+</body>
+
+</html>
+
+<script>
+
+    var cities = ['İzmir', 'İstanbul', 'Ankara', "Trabzon", "Diyarbarkır", "Van", "Adana", "Antalya", "Edirne"]
+
+    //Push metodu ile diziye bir eleman ekledik
+    cities.push('Çanakkale')
+
+    //lentgh propertisi ile dizideki eleman sayısını aldım
+    var count = cities.length;
+
+    //splice fonksiyonuna başlangıç indexini veriyoruz sonra sileceğimiz uzunluğu söylüyoruz.
+    // cities.splice(0,1)
+
+
+    //Dizideki bir elemanın index numarasını bulma
+    cities.indexOf('Adana')
+
+
+
+    for(i = 0; i < cities.length; i++){
+
+        var liElement = document.createElement('li');
+        liElement.innerHTML = cities[i];
+
+        document.getElementById('cityList').appendChild(liElement);
+
+
+    }
+
+
+    //find butonuna bastığında inputtaki değeri dizide arayacak ve onun index numarasını bana verecek. Eğer değeri bulamazsa -1 olarak geri dönecektir.
+
+    function find(){
+
+        var cityName = document.getElementById('name').value
+
+        var indexNo = cities.indexOf(cityName);
+
+        alert(indexNo)
+
+    }
+
+    //Eğer inputtaki değer varsa true yoksa false dönsün
+    function varMi(){
+
+        var cityName = document.getElementById('name').value
+
+        var result = cities.includes(cityName)
+
+        alert(result)
+
+
+    }
+    
+    
+
+    
+
+
+
+
+</script>

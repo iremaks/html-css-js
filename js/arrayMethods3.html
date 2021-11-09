@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="cityList">
+
+    </ul>
+</body>
+
+</html>
+
+<script>
+    var orders = [
+        {
+            "id": 10271,
+            "customerId": "SPLIR",
+            "employeeId": 6,
+            "orderDate": "1996-08-01 00:00:00.000",
+            "requiredDate": "1996-08-29 00:00:00.000",
+            "shippedDate": "1996-08-30 00:00:00.000",
+            "shipVia": 2,
+            "freight": 4.54,
+            "shipName": "Split Rail Beer & Ale",
+            "shipAddress": {
+                "street": "P.O. Box 555",
+                "city": "Lander",
+                "region": "WY",
+                "postalCode": 82520,
+                "country": "USA"
+            },
+            "details": [
+                {
+                    "productId": 33,
+                    "unitPrice": 2,
+                    "quantity": 24,
+                    "discount": 0
+                }
+            ]
+        },
+        {
+            "id": 10279,
+            "customerId": "LEHMS",
+            "employeeId": 8,
+            "orderDate": "1996-08-13 00:00:00.000",
+            "requiredDate": "1996-09-10 00:00:00.000",
+            "shippedDate": "1996-08-16 00:00:00.000",
+            "shipVia": 2,
+            "freight": 25.83,
+            "shipName": "Lehmanns Marktstand",
+            "shipAddress": {
+                "street": "Magazinweg 7",
+                "city": "Frankfurt a.M.",
+                "region": "NULL",
+                "postalCode": 60528,
+                "country": "Germany"
+            },
+            "details": [
+                {
+                    "productId": 17,
+                    "unitPrice": 31.2,
+                    "quantity": 15,
+                    "discount": 0.25
+                }
+            ]
+        },
+        {
+            "id": 10292,
+            "customerId": "TRADH",
+            "employeeId": 1,
+            "orderDate": "1996-08-28 00:00:00.000",
+            "requiredDate": "1996-09-25 00:00:00.000",
+            "shippedDate": "1996-09-02 00:00:00.000",
+            "shipVia": 2,
+            "freight": 1.35,
+            "shipName": "Tradiçao Hipermercados",
+            "shipAddress": {
+                "street": "Av. Inês de Castro 414",
+                "city": "Sao Paulo",
+                "region": "SP",
+                "postalCode": "05634-030",
+                "country": "Brazil"
+            },
+            "details": [
+                {
+                    "productId": 20,
+                    "unitPrice": 64.8,
+                    "quantity": 20,
+                    "discount": 0
+                }
+            ]
+        },
+        {
+            "id": 10295,
+            "customerId": "VINET",
+            "employeeId": 2,
+            "orderDate": "1996-09-02 00:00:00.000",
+            "requiredDate": "1996-09-30 00:00:00.000",
+            "shippedDate": "1996-09-10 00:00:00.000",
+            "shipVia": 2,
+            "freight": 1.15,
+            "shipName": "Vins et alcools Chevalier",
+            "shipAddress": {
+                "street": "59 rue de l'Abbaye",
+                "city": "Reims",
+                "region": "NULL",
+                "postalCode": 51100,
+                "country": "France"
+            },
+            "details": [
+                {
+                    "productId": 56,
+                    "unitPrice": 30.4,
+                    "quantity": 4,
+                    "discount": 0
+                }
+            ]
+        },
+        {
+            "id": 10313,
+            "customerId": "QUICK",
+            "employeeId": 2,
+            "orderDate": "1996-09-24 00:00:00.000",
+            "requiredDate": "1996-10-22 00:00:00.000",
+            "shippedDate": "1996-10-04 00:00:00.000",
+            "shipVia": 2,
+            "freight": 1.96,
+            "shipName": "QUICK-Stop",
+            "shipAddress": {
+                "street": "Taucherstraße 10",
+                "city": "Cunewalde",
+                "region": "NULL",
+                "postalCode": 1307,
+                "country": "Germany"
+            },
+            "details": [
+                {
+                    "productId": 36,
+                    "unitPrice": 15.2,
+                    "quantity": 12,
+                    "discount": 0
+                }
+            ]
+        },
+        {
+            "id": 10317,
+            "customerId": "LONEP",
+            "employeeId": 6,
+            "orderDate": "1996-09-30 00:00:00.000",
+            "requiredDate": "1996-10-28 00:00:00.000",
+            "shippedDate": "1996-10-10 00:00:00.000",
+            "shipVia": 1,
+            "freight": 12.69,
+            "shipName": "Lonesome Pine Restaurant",
+            "shipAddress": {
+                "street": "89 Chiaroscuro Rd.",
+                "city": "Portland",
+                "region": "OR",
+                "postalCode": 97219,
+                "country": "USA"
+            },
+            "details": [
+                {
+                    "productId": 1,
+                    "unitPrice": 14.4,
+                    "quantity": 20,
+                    "discount": 0
+                }
+            ]
+        }]
+
+    //Brezilyaya kaç adet sipariş geçtim?
+
+    //var newOrders = orders.filter(q => q.shipAddress.country == 'Brazil');
+
+    //console.log(newOrders.length);
+
+    //Ekrana siparişleri yazdır. Almanya HARİÇ
+    var newOrders = orders.filter(q => q.shipAddress.country != "Germany")
+
+    for (i = 0; i < newOrders.length; i++) {
+
+        var liElement = document.createElement('li');
+        liElement.innerHTML = newOrders[i].shipName
+
+        document.body.appendChild(liElement);
+
+
+    }
+
+</script>

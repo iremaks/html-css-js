@@ -1,0 +1,13 @@
+Products Array Soruları
+1) Stok adedi 0 olan kaç tane ürün var? (filter ile bul sonra length söyle)
+2) Stok adedi 0 OLMAYAN ürünleri li ye yazdır. ( önce ürünleri filter ile filtrele sonra yeni productları for ile dönüp li ye yaz!)
+3) discontinued true olan kaç adet ürünüm var?
+4) * Fiyatı 50 den büyük ve stok adedi 0 OLMAYAN yani stokta olan ürünleri yazdır. ( ünlem eşittir !=)
+5) ** Bu sorunun array functionla ilgisi yok. Ürünleri yazdır FAKAT stok adedi 0 ise o li KIRMIZI olsun
+6) ID si 8 olan ürünün adını console a yazdır ( find metodu )
+
+
+Orders Array Sorular
+1) Taşıma ücretü 5 üzeri olan ve ülkesi Brazil OLMAYAN kaç adet siparişim var?
+2) Ekrana sadece Fransadan gelen siparişleri yazdır
+3) *** Siparişdetayında 2 veya daha fazla sipariş bulunan orderları console a yaz.
