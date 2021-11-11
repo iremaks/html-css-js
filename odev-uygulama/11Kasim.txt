@@ -1,3 +1,4 @@
 1) http nedir? ( https )
 2) JSON nedir ?
 3) HTTP methods...
+4) https://northwind.vercel.app/api/categories ile get ve post işlemi yap
