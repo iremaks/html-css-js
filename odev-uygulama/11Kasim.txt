@@ -2,3 +2,8 @@
 2) JSON nedir ?
 3) HTTP methods...
 4) https://northwind.vercel.app/api/categories ile get ve post işlemi yap
+5) https://northwind.vercel.app/api/customers ie get ve post işlemi yap
+6) London şehrinde kaç müşteri var???
+7) Mexico da kaç müşterim var??
+8) ****06 telefon koduyla başlayan müşterilerimi listele
+9) https://northwind.vercel.app/api/products dan ürünleri çek. Fiyatı 30 dan büyükleri li ye yaz. then içerisinde datayı filtrele
