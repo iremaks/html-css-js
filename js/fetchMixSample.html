@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center;">
+
+    <select id="categories" onchange="change()">
+        <option>Seçiniz...</option>
+        <option value="-1">Hepsi</option>
+    </select>
+
+    <ul id="products">
+
+    </ul>
+
+</body>
+
+</html>
+
+<script>
+
+
+    fetch('https://northwind.vercel.app/api/categories')
+        .then((res) => res.json())
+        .then((data) => {
+
+
+            data.forEach((item) => {
+
+                var optionElement = document.createElement('option')
+                optionElement.innerHTML = item.name;
+                optionElement.value = item.id
+
+                document.getElementById('categories').appendChild(optionElement);
+
+            })
+
+
+        })
+
+
+    var change = (e) => {
+
+
+
+        var secilenElement = document.getElementById('categories').value;
+        document.getElementById('products').innerHTML = ""
+
+
+        fetch('https://northwind.vercel.app/api/products')
+            .then((res) => res.json())
+            .then((data) => {
+
+                data.forEach((item) => {
+
+                    var liElement = document.createElement('li')
+                    liElement.innerHTML = item.name;
+
+                    if (item.categoryId == secilenElement || secilenElement == -1) {
+
+                        document.getElementById('products').appendChild(liElement)
+                    }
+
+
+                })
+
+            })
+
+
+    }
+
+
+
+
+
+
+
+</script>
