@@ -6,4 +6,28 @@
 6) London şehrinde kaç müşteri var???
 7) Mexico da kaç müşterim var??
 8) ****06 telefon koduyla başlayan müşterilerimi listele
-9) https://northwind.vercel.app/api/products dan ürünleri çek. Fiyatı 30 dan büyükleri li ye yaz. then içerisinde datayı filtrele
+9) https://northwind.vercel.app/api/products dan ürünleri çek. Ekrana yazdır.
+10) Fiyatı 30 dan büyüklerin rengi kırmızı olsun.
+11) Ekrana unitPrice, unitsIn Stock, ve name için birer input koy. Product ekle
+
+
+https://jsonplaceholder.typicode.com/users
+
+12) Userları çek. ad ve soyadını li içerisine büyük harflerle yanyana yazdır
+13) https://jsonplaceholder.typicode.com/posts
+title kısmı 40 karakterden küçük olan postlarıo ekrana YAZDIRMA
+
+
+
+
+
+
+
+Okunacaklar
+HTTP
+https://www.hosting.com.tr/bilgi-bankasi/http-nedir/
+https://medium.com/@bsrutmn/rest-ve-restful-web-servi%CC%87s-nedi%CC%87r-7258b7db7f66
+
+JSON
+https://www.turhost.com/blog/json-nedir-ve-ne-icin-kullanilir/#serp
+

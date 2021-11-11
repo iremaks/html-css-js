@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" name="" id="productId">
+    <button onclick="deleteProduct()">Delete</button>
+
+</body>
+<script>
+
+    var deleteProduct = () => {
+
+        var pid = document.getElementById('productId').value;
+
+        //northwind.now.sh/api/categories/1 böyle bir url yolla ve http metodun DELETE olsun
+
+
+        var requestOptions = {
+            method: 'DELETE',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        }
+
+
+        fetch("https://northwind.vercel.app/api/products/" + pid, requestOptions)
+            .then((res) => res.json())
+            .then((data) => {
+               
+                alert("Ürün başarıyla silinid!! ")
+            })
+
+    }
+
+</script>
+</html>
+
