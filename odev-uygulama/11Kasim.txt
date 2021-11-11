@@ -1,0 +1,3 @@
+1) http nedir? ( https )
+2) JSON nedir ?
+3) HTTP methods...

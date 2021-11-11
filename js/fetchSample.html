@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul id="supplierList">
+
+    </ul>
+
+</body>
+
+</html>
+
+<script>
+
+    var testFunc = () => "merhaba dünya"
+
+
+
+    // JSON => js object, csharp entity, java nesne, python 
+    //Bir internet servisine request atmamı sağlayan arkadaşımız FETCH
+    fetch("https://northwind.vercel.app/api/suppliers")
+        .then((res) => res.json())
+        .then((data) => {
+
+            data.forEach((item) => {
+
+                var liElement = document.createElement('li')
+                liElement.innerHTML = item.companyName
+
+                document.body.appendChild(liElement);
+
+            })
+
+    })
+        .catch((err) => {
+            console.log("Hata meydana geldi...", err);
+        })
+
+
+
+</script>
