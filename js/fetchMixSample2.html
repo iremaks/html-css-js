@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <span>Customer Count: </span>
+        <span id="customerCount">0</span>
+    </div>
+    <hr>
+    <div>
+        <label for="">Company Name</label>
+        <input type="text" name="" id="companyName">
+    </div>
+    <div>
+        <label for="">Contact Name</label>
+        <input type="text" name="" id="contactName">
+    </div>
+
+    <div>
+        <label for="">Contact Title</label>
+        <input type="text" name="" id="contactTitle">
+    </div>
+
+    <div>
+        <button onclick="add()">Add</button>
+    </div>
+
+    <hr>
+
+
+    <div>
+        <label for="">Customer Id</label>
+        <input type="text" name="" id="customerId">
+    </div>
+    <div>
+        <button onclick="deleteCustomer()">Delete</button>
+    </div>
+    <button onclick="getCustomers()">Get Customers</button>
+
+    <ul id="customers">
+
+    </ul>
+
+
+</body>
+
+</html>
+<script>
+
+    const apiUrl = 'https://northwind.vercel.app/api/customers';
+
+    var getCustomers = () => {
+
+        document.getElementById('customers').innerHTML = ''
+
+        fetch(apiUrl)
+            .then((res) => res.json())
+            .then((data) => {
+
+                data.map((item) => {
+
+                    var liElement = document.createElement('li');
+                    liElement.innerHTML = item.companyName + " - " + item.id
+
+
+                    var source = '';
+
+                    switch (item.address?.country) {
+                        case 'Germany':
+                            source = 'flags/de.svg'
+                            break;
+                        case 'Brazil':
+                            source = "flags/br.svg";
+                            break;
+                        case 'Sweden':
+                            source = "flags/se.svg";
+                            break;
+                        case 'Mexico':
+                            source = "flags/mx.svg";
+                            break;
+                        case 'UK':
+                            source = "flags/gb.svg";
+                            break;
+
+                        default:
+                            source = "flags/tr.svg";
+                    }
+
+                    var imgElement = document.createElement('img');
+                    imgElement.width = 50;
+                    imgElement.height = 50;
+                    imgElement.src = source
+
+
+                    document.getElementById('customers').appendChild(liElement);
+                    document.getElementById('customers').appendChild(imgElement);
+
+
+                })
+
+                document.getElementById('customerCount').innerHTML = data.length
+
+            })
+
+    }
+
+
+    var add = () => {
+
+        var newCustomer = new Object();
+        newCustomer.companyName = document.getElementById('companyName').value;
+        newCustomer.contactName = document.getElementById('contactName').value;
+        newCustomer.contactTitle = document.getElementById('contactTitle').value;
+
+        var requestOptions = {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newCustomer)
+        }
+
+
+        fetch(apiUrl, requestOptions)
+            .then((res) => res.json())
+            .then((data) => {
+
+                console.log('Customer ekleme işlemi başarılı!');
+                getCustomers()
+
+            })
+
+    }
+
+
+    var deleteCustomer = () => {
+
+        var customerId = document.getElementById('customerId').value;
+
+        //GET, POST, DELETE
+        var requestOptions = {
+            method: 'DELETE',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
+        }
+
+        fetch(apiUrl + "/" + customerId, requestOptions)
+            .then((res) => res.json())
+            .then((data) => {
+                getCustomers();
+            })
+    }
+
+
+</script>

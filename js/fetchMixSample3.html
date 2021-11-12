@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <select id="albums" onchange="changeAlbum()">
+        <option>Seçiniz...</option>
+        <option value="-1">Hepsi</option>
+    </select>
+
+    <div id="photos">
+
+    </div>
+
+</body>
+<script>
+
+
+    //Öncelikle selecti albümlerle dolduruyorum
+
+    fetch('https://jsonplaceholder.typicode.com/albums')
+        .then((res) => res.json())
+        .then((data) => {
+
+            data.map((item) => {
+
+                var optionElement = document.createElement('option');
+                optionElement.innerHTML = item.title;
+                optionElement.value = item.id
+
+                document.getElementById('albums').appendChild(optionElement);
+
+
+            })
+
+        })
+
+
+
+    var changeAlbum = () => {
+
+        var secilenAlbum = document.getElementById('albums').value;
+
+        document.getElementById('photos').innerHTML = ''
+
+        fetch('https://jsonplaceholder.typicode.com/photos')
+            .then((res) => res.json())
+            .then((data) => {
+
+                var albumsData = []
+
+                if (secilenAlbum == -1) {
+                    albumsData = data
+                }
+                else {
+                    albumsData = data.filter(q => q.albumId == secilenAlbum)
+                }
+
+                albumsData.map((item) => {
+
+                    var imgElement = document.createElement('img')
+                    imgElement.src = item.thumbnailUrl
+
+                    var spanElement = document.createElement('span');
+                    spanElement.innerHTML = item.title
+
+                    document.getElementById('photos').appendChild(imgElement)
+                    document.getElementById('photos').appendChild(spanElement)
+
+
+                })
+            })
+
+    }
+
+
+
+
+</script>
+
+</html>
