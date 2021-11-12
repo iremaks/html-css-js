@@ -29,7 +29,7 @@
 <body>
 
     <table id="products">
-        <tr style="position:sticky; top:0; background-color:tomato">
+        <tr style="position:sticky; top:0;">
             <td>Name</td>
             <td>Unit Price</td>
             <td>Units In Stock</td>
@@ -68,6 +68,10 @@
                         trElement.appendChild(tdElement1)
                         trElement.appendChild(tdElement2)
                         trElement.appendChild(tdElement3)
+
+                        if(item.unitPrice > 20){
+                            trElement.style.backgroundColor = 'tomato'
+                        }
 
                         document.getElementById('products').appendChild(trElement)
 
