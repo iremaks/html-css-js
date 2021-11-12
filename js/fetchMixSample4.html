@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table id="products">
+        <tr style="position:sticky; top:0; background-color:tomato">
+            <td>Name</td>
+            <td>Unit Price</td>
+            <td>Units In Stock</td>
+        </tr>
+
+
+    </table>
+</body>
+
+</html>
+<script>
+
+
+    var productManager = {
+        //Bu fonksiyon bütün ürünleri çeker ve EKRANA yazar.
+        getAll: () => {
+
+            fetch('https://northwind.vercel.app/api/products')
+                .then((res) => res.json())
+                .then((data) => {
+
+                    data.map((item) => {
+
+                        var trElement = document.createElement('tr');
+
+                        var tdElement1 = document.createElement('td');
+                        tdElement1.innerHTML = item.name
+
+                        var tdElement2 = document.createElement('td');
+                        tdElement2.innerHTML = item.unitPrice
+
+                        var tdElement3 = document.createElement('td');
+                        tdElement3.innerHTML = item.unitsInStock
+
+                  
+                        trElement.appendChild(tdElement1)
+                        trElement.appendChild(tdElement2)
+                        trElement.appendChild(tdElement3)
+
+                        document.getElementById('products').appendChild(trElement)
+
+
+                    })
+
+                })
+
+        }
+    }
+
+
+    productManager.getAll() 
+
+</script>
